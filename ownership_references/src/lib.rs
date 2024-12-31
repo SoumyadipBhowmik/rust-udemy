@@ -1,9 +1,5 @@
 pub fn eat(s: String) -> bool { 
-    if s.starts_with("b") && s.contains("a") {
-        return true;
-    } else {
-        return false;
-    }
+    s.starts_with("b") && s.contains("a")
 }
 
 pub fn bedazzle(s: &mut String) {
