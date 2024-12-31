@@ -1,23 +1,7 @@
 // Silence some warnings so they don't distract from the exercise.
 #![allow(unused_mut, unused_variables)]
 
-use ownership_references::{eat, bedazzle};
-
-fn inspect(s: &String) {
-    if s.ends_with("s") {
-        println!("Plural");
-    } else {
-        println!("Singular");
-    }
-}
-
-fn change(s: &mut String) {
-    if s.ends_with("s") {
-        
-    } else {
-        s.push_str("s");
-    }
-}
+use ownership_references::{eat, bedazzle, change, inspect};
 
 fn main() {
     // This fancy stuff either gets the first argument as a String, or prints
