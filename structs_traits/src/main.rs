@@ -20,7 +20,7 @@ struct Grapes {
 
 impl Bite for Grapes {
     fn bite(self: &mut Self) {
-        self.amount_left -= 10;
+        self.amount_left -= 1;
     }
 }
 
